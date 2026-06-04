@@ -104,7 +104,7 @@
 		},
 		"errors": {
 			"patterns": [{
-				"match": "^ *(\\d+|>|<|=|>=|<=|end|W|endW|i) .+$",
+				"match": "^ *((-?\\d+\\.(e-?)?\\d*|-?\\.\\d+|\\d+)|>|<|=|>=|<=|end|W|endW|i) .+$",
 				"name": "invalid.illegal.compact"
 			}]
 		},
