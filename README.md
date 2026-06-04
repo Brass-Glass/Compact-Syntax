@@ -19,6 +19,7 @@ It currently sits at **<span style="font-size:125%;">36</span> blocks**, but tha
 **Obtain the files** by downloading the .ZIP of this repository, and **unzip** the compressed folder.\
 Find the **extensions** folder of Visual Studio Code (`user/.vscode/` for Windows, as an example).\
 **Move** this extension’s folder to the extension folder.\
+※ *this is only if you’re getting this from GitHub; with other sources, please follow their instructions!!*\
 And **that’s all**! To have changes go into-effect, reload the window or close & reöpen the instance.\
 Make sure your file is a `.cpt` or a `.compact` file, and highlighting should appear :D
 
