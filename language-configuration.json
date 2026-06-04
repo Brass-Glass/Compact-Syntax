@@ -1,0 +1,6 @@
+{
+    "indentationRules": {
+        "increaseIndentPattern": "^\\s*(>|<|>=|<=|=) (-?\\d+\\.(e-?)?\\d*|-?\\.\\d+|\\d+) (-?\\d+\\.(e-?)?\\d*|-?\\.\\d+|\\d+)( (.*)  (.*)| (.*))?$",
+        "decreaseIndentPattern": "^\\s*(end|endW)$"
+    }
+}

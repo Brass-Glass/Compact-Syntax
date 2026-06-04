@@ -1,0 +1,119 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Compact",
+	"patterns": [
+		{
+			"include": "#functions"
+		},
+		{
+			"include": "#conditionals"
+		},
+		{
+			"include": "#operations"
+		},
+		{
+			"include": "#errors"
+		},
+		{
+			"include": "#comments"
+		}
+	],
+	"repository": {
+		"functions": {
+			"patterns": [{
+				"match": "^ *(end|W|endW)$",
+				"captures": {
+					"1": {"name": "keyword.control.compact"}
+				}
+			}]
+		},
+		"conditionals": {
+			"patterns": [{
+				"match": "(?i)^ *(>|<|>=|<=|=) (-?\\d+\\.(e-?)?\\d*|-?\\.\\d+|\\d+) (-?\\d+\\.(e-?)?\\d*|-?\\.\\d+|\\d+)( (.*)  (.*)| (.*))?$",
+				"captures": {
+					"1": {
+						"name": "keyword.operator.compact"
+					},
+					"2": {
+						"patterns": [{"include": "#constants"}, {"include": "#decimals"}, {"include": "#variables"}]
+					},
+					"4": {
+						"patterns": [{"include": "#constants"}, {"include": "#decimals"}, {"include": "#variables"}]
+					},
+					"7": {
+						"name": "string.interpolated.compact"
+					},
+					"8": {
+						"name": "string.interpolated.compact"
+					},
+					"9": {
+						"name": "string.interpolated.compact"
+					}
+				}
+			}]
+		},
+		"operations": {
+			"patterns": [{
+				"name": "meta.operation.compact",
+				"match": "(?i)^ *(-?\\d+\\.(e-?)?\\d*|-?\\.\\d+|\\d+|i) ((#-?)?\\d+)( (.*))?$",
+				"captures": {
+					"1": {
+						"patterns": [{"include": "#constants"}, {"include": "#decimals"}, {"include": "#variables"}]
+					},
+					"3": {
+						"patterns": [{"include": "#hash-variables"}, {"include": "#variables"}]
+					},
+					"6": {
+						"name": "string.interpolated.compact"
+					}
+				}
+			}]
+		},
+		"constants": {
+			"patterns": [{
+				"match": "(?i)(i|0+\\.?0*)",
+				"name": "constant.language.compact"
+			}]
+		},
+		"decimals": {
+			"patterns": [{
+				"match": "(-?\\d+\\.(e-?)?\\d*|-?\\.\\d+)",
+				"name": "constant.numeric.compact"
+			}]
+		},
+		"hash-variables": {
+			"patterns": [{
+				"match": "(#)(-?\\d+)",
+				"captures": {
+					"1": {
+						"name": "storage.type.compact"
+					},
+					"2": {
+						"name": "constant.numeric.compact"
+					}
+				}
+			}]
+		},
+		"variables": {
+			"patterns": [
+				{"match": "([1267]|12)$", "name": "support.variable.compact"},
+				{"match": "([389]|10|11)$", "name": "variable.language.compact"},
+				{"match": "[45]$", "name": "variable.other.compact"},
+				{"match": ".+", "name": "variable.parameter.compact"}
+			]
+		},
+		"errors": {
+			"patterns": [{
+				"match": "^ *(\\d+|>|<|=|>=|<=|end|W|endW|i) .+$",
+				"name": "invalid.illegal.compact"
+			}]
+		},
+		"comments": {
+			"patterns": [{
+				"match": "^.+$",
+				"name": "comment.line.compact"
+			}]
+		}
+	},
+	"scopeName": "source.cpt"
+}

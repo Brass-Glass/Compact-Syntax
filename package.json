@@ -1,0 +1,27 @@
+{
+  "name": "compact-syntax",
+  "displayName": "Compact Syntax",
+  "publisher": "-Brass_Glass-",
+  "description": "Syntax highlighting for the Compact language.",
+  "version": "3.0.0",
+  "engines": {
+    "vscode": "^1.107.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Linters"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "compact",
+      "aliases": ["Compact", "compact"],
+      "extensions": [".cpt",".compact"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "compact",
+      "scopeName": "source.cpt",
+      "path": "./syntaxes/compact.tmLanguage.json"
+    }]
+  }
+}
