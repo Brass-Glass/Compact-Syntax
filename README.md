@@ -4,7 +4,7 @@
 
 ![cover](https://github.com/Brass-Glass/Compact-Syntax/blob/3ae22f5562a76cc86a234ec889ae3329931d0b5d/images/cover.png?raw=true)
 
-### Syntax highlighting for **Compact**, the language.
+### Syntax-highlighting for **Compact**, the language.
 ✧ About
 ===
 
