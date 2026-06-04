@@ -2,7 +2,7 @@
   "name": "compact-syntax",
   "displayName": "Compact Syntax",
   "publisher": "-Brass_Glass-",
-  "description": "Syntax highlighting for the Compact language.",
+  "description": "Syntax-highlighting for Compact, the language.",
   "version": "3.0.0",
   "engines": {
     "vscode": "^1.107.0"
@@ -23,5 +23,6 @@
       "scopeName": "source.cpt",
       "path": "./syntaxes/compact.tmLanguage.json"
     }]
-  }
+  },
+  "icon": "./icon.png"
 }
