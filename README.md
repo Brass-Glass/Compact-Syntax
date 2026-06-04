@@ -1,5 +1,5 @@
 <h1 style="text-align:center;font-family:helvetica;letter-spacing:3px;font-size:300%;margin-top:0px">
-    Compact Syntax v4.0
+    Compact Syntax 4.0
 </h1>
 
 ![cover](https://github.com/Brass-Glass/Compact-Syntax/blob/3ae22f5562a76cc86a234ec889ae3329931d0b5d/images/cover.png?raw=true)
