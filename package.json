@@ -24,5 +24,15 @@
       "path": "./syntaxes/compact.tmLanguage.json"
     }]
   },
-  "icon": "./images/icon.png"
+  "icon": "./images/icon.png",
+  "galleryBanner": {
+    "color": "#3d2680",
+    "theme": "dark"
+  },
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "homepage": "https://github.com/Brass-Glass/Compact-Syntax/blob/main/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Brass-Glass/Compact-Syntax.git"
+  }
 }
