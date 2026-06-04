@@ -1,7 +1,7 @@
 {
   "name": "compact-syntax",
   "displayName": "Compact Syntax",
-  "publisher": "-Brass_Glass-",
+  "publisher": "brassglass",
   "description": "Syntax-highlighting for Compact, the language.",
   "version": "4.0.0",
   "engines": {
@@ -29,7 +29,7 @@
     "color": "#3d2680",
     "theme": "dark"
   },
-  "license": "SEE LICENSE IN LICENSE.txt",
+  "license": "LICENSE.txt",
   "homepage": "https://github.com/Brass-Glass/Compact-Syntax/blob/main/README.md",
   "repository": {
     "type": "git",
