@@ -3,7 +3,7 @@
   "displayName": "Compact Syntax",
   "publisher": "-Brass_Glass-",
   "description": "Syntax-highlighting for Compact, the language.",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "engines": {
     "vscode": "^1.107.0"
   },

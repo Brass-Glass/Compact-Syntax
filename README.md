@@ -1,20 +1,29 @@
 <h1 style="text-align:center;font-family:helvetica;letter-spacing:3px;font-size:300%;margin-top:0px">
-    Compact Syntax
+    Compact Syntax v4.0
 </h1>
 
 ![cover](https://github.com/Brass-Glass/Compact-Syntax/blob/3ae22f5562a76cc86a234ec889ae3329931d0b5d/images/cover.png?raw=true)
 
 ### Syntax highlighting for **Compact**, the language.
 ✧ About
-========
+===
 
 **Compact** is a text-based language made using *Scratch*, the block-based language.\
 It was designed with one idea in mind: to create a language with as **little blocks** as possible.\
 It currently sits at **<span style="font-size:125%;">36</span> blocks**, but that can always change!\
 *※ The project will be able to be viewed [here](https://example.org), once it is shared!*
 
+⚝ How to Install
+===
+
+**Obtain the files** by downloading the .ZIP of this repository, and **unzip** the compressed folder.\
+Find the **extensions** folder of Visual Studio Code (`user/.vscode/` for Windows, as an example).\
+**Move** this extension’s folder to the extension folder.\
+And **that’s all**! To have changes go into-effect, reload the window or close & reöpen the instance.\
+Make sure your file is a `.cpt` or a `.compact` file, and highlighting should appear :D
+
 ☆ Syntax
-========
+===
 
 Compact relies on the **operation** command, the *only* function of the language (ignoring the compiler).\
 It takes one input, computing `[input] + (var1 / var2)` and saving it to an output variable.\
@@ -89,7 +98,7 @@ end
 ```
 
 ♡ Closing
-========
+===
 
 I hope you enjoy this highlighting-extension!\
 If you like it, please feel free to **write a review**!\
