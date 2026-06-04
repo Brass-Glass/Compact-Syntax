@@ -1,10 +1,10 @@
-<div style="text-align:center;">
-    <h1 style="font-family:helvetica;letter-spacing:3px;font-size:300%;margin-top:0px">
-        Compact Syntax
-    </h1>
-    Syntax highlighting for <b>Compact</b>, the language.
-</div>
+<h1 style="text-align:center;font-family:helvetica;letter-spacing:3px;font-size:300%;margin-top:0px">
+    Compact Syntax
+</h1>
 
+![cover](https://github.com/Brass-Glass/Compact-Syntax/blob/7545acfd379fd61d48c2af72d33d56333a1f7bfc/images/cover.png?raw=true)
+
+Syntax highlighting for **Compact**, the language.
 ## ☆ About
 **Compact** is a text-based language made using *Scratch*, the block-based language.\
 It was designed with one idea in mind: to create a language with as **little blocks** as possible.\
