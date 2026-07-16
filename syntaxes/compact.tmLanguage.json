@@ -55,7 +55,7 @@
 		"operations": {
 			"patterns": [{
 				"name": "meta.operation.compact",
-				"match": "(?i)^ *(-?\\d+\\.(e-?)?\\d*|-?\\.\\d+|\\d+|i) ((#-?)?\\d+)( (.*))?$",
+				"match": "(?i)^ *(-?\\d+\\.(e-?)?\\d*|-?\\.\\d+|\\d+|i|-) ((#-?)?\\d+)( (.*))?$",
 				"captures": {
 					"1": {
 						"patterns": [{"include": "#constants"}, {"include": "#decimals"}, {"include": "#variables"}]
@@ -71,7 +71,7 @@
 		},
 		"constants": {
 			"patterns": [{
-				"match": "(?i)(i|0+\\.?0*)",
+				"match": "(?i)(i|0+\\.?0*|-)",
 				"name": "constant.language.compact"
 			}]
 		},
@@ -96,9 +96,9 @@
 		},
 		"variables": {
 			"patterns": [
-				{"match": "([1267]|12)$", "name": "support.variable.compact"},
-				{"match": "([389]|10|11)$", "name": "variable.language.compact"},
-				{"match": "[45]$", "name": "variable.other.compact"},
+				{"match": "([12]|11)$", "name": "support.variable.compact"},
+				{"match": "([3789]|10)$", "name": "variable.language.compact"},
+				{"match": "[456]$", "name": "variable.other.compact"},
 				{"match": ".+", "name": "variable.parameter.compact"}
 			]
 		},
