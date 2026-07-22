@@ -96,9 +96,10 @@
 		},
 		"variables": {
 			"patterns": [
-				{"match": "([12]|11)$", "name": "support.variable.compact"},
-				{"match": "([3789]|10)$", "name": "variable.language.compact"},
-				{"match": "[456]$", "name": "variable.other.compact"},
+				{"match": "([12]|10)$", "name": "support.variable.compact"},
+				{"match": "[389]$", "name": "variable.language.compact"},
+				{"match": "[4567]$", "name": "variable.other.compact"},
+				{"match": "11", "name": "invalid.illegal.compact"},
 				{"match": ".+", "name": "variable.parameter.compact"}
 			]
 		},
