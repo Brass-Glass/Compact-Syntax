@@ -12,6 +12,9 @@
 			"include": "#operations"
 		},
 		{
+			"include": "#directives"
+		},
+		{
 			"include": "#errors"
 		},
 		{
@@ -99,13 +102,25 @@
 				{"match": "([12]|10)$", "name": "support.variable.compact"},
 				{"match": "[389]$", "name": "variable.language.compact"},
 				{"match": "[4567]$", "name": "variable.other.compact"},
-				{"match": "11$", "name": "invalid.illegal.compact"},
 				{"match": ".+", "name": "variable.parameter.compact"}
 			]
 		},
+		"directives": {
+			"patterns": [{
+				"match": "^ *(#)((sounds) \\d+)$",
+				"captures": {
+					"1": {
+						"name": "keyboard.control.compact"
+					},
+					"2": {
+						"name": "string.interpolated.compact"
+					}
+				}
+			}]
+		},
 		"errors": {
 			"patterns": [{
-				"match": "^ *((-?\\d+\\.(e-?)?\\d*|-?\\.\\d+|\\d+)|>|<|=|>=|<=|end|W|endW|i) .+$",
+				"match": "^ *((-?\\d+\\.(e-?)?\\d*|-?\\.\\d+|\\d+)|>|<|=|>=|<=|end|W|endW|i|#(sounds)) .+$",
 				"name": "invalid.illegal.compact"
 			}]
 		},
