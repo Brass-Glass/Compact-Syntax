@@ -10,7 +10,7 @@
 
 **Compact** is a text-based language made using *Scratch*, the block-based language.\
 It was designed with one idea in mind: to create a language with as **little blocks** as possible.\
-It currently sits at **<span style="font-size:125%;">36</span> blocks**, but that can always change!\
+It currently sits at **<span style="font-size:125%;">29</span> blocks**, but that can always change!\
 *※ The project will be able to be viewed [here](https://example.org), once it is shared!*
 
 ⚝ How to Install
