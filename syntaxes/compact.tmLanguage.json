@@ -89,7 +89,7 @@
 				"match": "(#)(-?\\d+)",
 				"captures": {
 					"1": {
-						"name": "storage.type.compact"
+						"name": "storage.modifier.compact"
 					},
 					"2": {
 						"name": "constant.numeric.compact"
@@ -102,13 +102,13 @@
 				"match": "(~)((\\d+)((\\+|-)(\\d*.\\d+|\\d+))?)?",
 				"captures": {
 					"1": {
-						"name": "storage.type.compact"
+						"name": "storage.modifier.compact"
 					},
 					"3": {
 						"name": "constant.numeric.compact"
 					},
 					"4": {
-						"name": "storage.modifier.compact"
+						"name": "constant.other.compact"
 					}
 				}
 			}]
