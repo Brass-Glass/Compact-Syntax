@@ -61,7 +61,7 @@
 				"match": "(?i)^ *(-?\\d+\\.(e-?)?\\d*|-?\\.\\d+|\\d+|i|-) ((#-?)?\\d+)( (.*))?$",
 				"captures": {
 					"1": {
-						"patterns": [{"include": "#constants"}, {"include": "#decimals"}, {"include": "#variables"}]
+						"patterns": [{"include": "#lookups"}, {"include": "#constants"}, {"include": "#decimals"}, {"include": "#variables"}]
 					},
 					"3": {
 						"patterns": [{"include": "#hash-variables"}, {"include": "#variables"}]
@@ -87,6 +87,19 @@
 		"hash-variables": {
 			"patterns": [{
 				"match": "(#)(-?\\d+)",
+				"captures": {
+					"1": {
+						"name": "storage.type.compact"
+					},
+					"2": {
+						"name": "constant.numeric.compact"
+					}
+				}
+			}]
+		},
+		"lookups": {
+			"patterns": [{
+				"match": "(~)(\\d*)",
 				"captures": {
 					"1": {
 						"name": "storage.type.compact"
