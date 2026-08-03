@@ -115,20 +115,23 @@
 		},
 		"directives": {
 			"patterns": [{
-				"match": "^ *(%(sounds)) (\\d+)$",
+				"match": "^ *(%)(sounds) (\\d+)$",
 				"captures": {
 					"1": {
-						"name": "keyboard.control.directive.compact"
+						"name": "keyword.directive.compact"
+					},
+					"2": {
+						"name": "entity.name.directive.compact"
 					},
 					"3": {
-						"name": "string.interpolated.directive.compact"
+						"name": "constant.numeric.directive.compact"
 					}
 				}
 			}]
 		},
 		"errors": {
 			"patterns": [{
-				"match": "^ *((-?\\d+\\.(e-?)?\\d*|-?\\.\\d+|\\d+)|>|<|=|>=|<=|end|W|endW|i|@(sounds)|&.+) .+$",
+				"match": "^ *((-?\\d+\\.(e-?)?\\d*|-?\\.\\d+|\\d+)|>|<|=|>=|<=|end|W|endW|i|%(sounds)|&.+) .+$",
 				"name": "invalid.illegal.compact"
 			}]
 		},
