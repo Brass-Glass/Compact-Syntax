@@ -87,14 +87,7 @@
 		"hash-variables": {
 			"patterns": [{
 				"match": "(#)(-?\\d+)",
-				"captures": {
-					"1": {
-						"name": "keyword.operator.hash.compact"
-					},
-					"2": {
-						"name": "constant.numeric.offset.compact"
-					}
-				}
+				"name": "variable.other.constant.hash.compact"
 			}]
 		},
 		"lookups": {
@@ -115,15 +108,14 @@
 		},
 		"variables": {
 			"patterns": [
-				{"match": "([12]|10)$", "name": "support.variable.compact"},
+				{"match": "([124567]|10)$", "name": "support.variable.compact"},
 				{"match": "[389]$", "name": "variable.language.compact"},
-				{"match": "[4567]$", "name": "variable.other.compact"},
 				{"match": ".+", "name": "variable.parameter.compact"}
 			]
 		},
 		"directives": {
 			"patterns": [{
-				"match": "^ *(@(sounds)) (\\d+)$",
+				"match": "^ *(%(sounds)) (\\d+)$",
 				"captures": {
 					"1": {
 						"name": "keyboard.control.directive.compact"
