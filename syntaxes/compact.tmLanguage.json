@@ -99,7 +99,7 @@
 		},
 		"lookups": {
 			"patterns": [{
-				"match": "(~)((\\d+)((\\+|-)(\\d*.\\d+|\\d+))?)?",
+				"match": "(&)((\\d+)((\\+|-)(\\d*.\\d+|\\d+))?)?",
 				"captures": {
 					"1": {
 						"name": "keyword.operator.lookup.compact"
@@ -123,7 +123,7 @@
 		},
 		"directives": {
 			"patterns": [{
-				"match": "^ *(#(sounds)) (\\d+)$",
+				"match": "^ *(@(sounds)) (\\d+)$",
 				"captures": {
 					"1": {
 						"name": "keyboard.control.directive.compact"
@@ -136,7 +136,7 @@
 		},
 		"errors": {
 			"patterns": [{
-				"match": "^ *((-?\\d+\\.(e-?)?\\d*|-?\\.\\d+|\\d+)|>|<|=|>=|<=|end|W|endW|i|#(sounds)|~.+) .+$",
+				"match": "^ *((-?\\d+\\.(e-?)?\\d*|-?\\.\\d+|\\d+)|>|<|=|>=|<=|end|W|endW|i|@(sounds)|&.+) .+$",
 				"name": "invalid.illegal.compact"
 			}]
 		},
