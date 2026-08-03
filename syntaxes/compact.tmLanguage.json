@@ -26,7 +26,7 @@
 			"patterns": [{
 				"match": "^ *(end|W|endW)$",
 				"captures": {
-					"1": {"name": "keyword.control.compact"}
+					"1": {"name": "keyword.control.function.compact"}
 				}
 			}]
 		},
@@ -35,7 +35,7 @@
 				"match": "(?i)^ *(>|<|>=|<=|=) (-?\\d+\\.(e-?)?\\d*|-?\\.\\d+|\\d+) (-?\\d+\\.(e-?)?\\d*|-?\\.\\d+|\\d+)( (.*)  (.*)| (.*))?$",
 				"captures": {
 					"1": {
-						"name": "keyword.operator.compact"
+						"name": "keyword.operator.conditional.compact"
 					},
 					"2": {
 						"patterns": [{"include": "#constants"}, {"include": "#decimals"}, {"include": "#variables"}]
@@ -44,13 +44,13 @@
 						"patterns": [{"include": "#constants"}, {"include": "#decimals"}, {"include": "#variables"}]
 					},
 					"7": {
-						"name": "string.interpolated.compact"
+						"name": "string.interpolated.input.compact"
 					},
 					"8": {
-						"name": "string.interpolated.compact"
+						"name": "string.interpolated.input.compact"
 					},
 					"9": {
-						"name": "string.interpolated.compact"
+						"name": "string.interpolated.input.compact"
 					}
 				}
 			}]
@@ -67,7 +67,7 @@
 						"patterns": [{"include": "#hash-variables"}, {"include": "#variables"}]
 					},
 					"10": {
-						"name": "string.interpolated.compact"
+						"name": "string.interpolated.input.compact"
 					}
 				}
 			}]
@@ -89,10 +89,10 @@
 				"match": "(#)(-?\\d+)",
 				"captures": {
 					"1": {
-						"name": "storage.modifier.compact"
+						"name": "keyword.operator.hash.compact"
 					},
 					"2": {
-						"name": "constant.numeric.compact"
+						"name": "constant.numeric.offset.compact"
 					}
 				}
 			}]
@@ -102,13 +102,13 @@
 				"match": "(~)((\\d+)((\\+|-)(\\d*.\\d+|\\d+))?)?",
 				"captures": {
 					"1": {
-						"name": "storage.modifier.compact"
+						"name": "keyword.operator.lookup.compact"
 					},
 					"3": {
-						"name": "constant.numeric.compact"
+						"name": "entity.name.lookup.compact"
 					},
 					"4": {
-						"name": "constant.other.compact"
+						"name": "constant.numeric.offset.compact"
 					}
 				}
 			}]
@@ -123,20 +123,20 @@
 		},
 		"directives": {
 			"patterns": [{
-				"match": "^ *(#)((sounds) \\d+)$",
+				"match": "^ *(#(sounds)) (\\d+)$",
 				"captures": {
 					"1": {
-						"name": "keyboard.control.compact"
+						"name": "keyboard.control.directive.compact"
 					},
-					"2": {
-						"name": "string.interpolated.compact"
+					"3": {
+						"name": "string.interpolated.directive.compact"
 					}
 				}
 			}]
 		},
 		"errors": {
 			"patterns": [{
-				"match": "^ *((-?\\d+\\.(e-?)?\\d*|-?\\.\\d+|\\d+)|>|<|=|>=|<=|end|W|endW|i|#(sounds)) .+$",
+				"match": "^ *((-?\\d+\\.(e-?)?\\d*|-?\\.\\d+|\\d+)|>|<|=|>=|<=|end|W|endW|i|#(sounds)|~.+) .+$",
 				"name": "invalid.illegal.compact"
 			}]
 		},
