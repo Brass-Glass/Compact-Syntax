@@ -58,7 +58,7 @@
 		"operations": {
 			"patterns": [{
 				"name": "meta.operation.compact",
-				"match": "(?i)^ *(-?\\d+\\.(e-?)?\\d*|-?\\.\\d+|\\d+|i|-|~(\\d+((\\+|-)(\\d*.\\d+|\\d+))?)?) ((#-?)?\\d+)( (.*))?$",
+				"match": "(?i)^ *(-?\\d+\\.(e-?)?\\d*|-?\\.\\d+|\\d+|i|-|&(\\d+((\\+|-)(\\d*.\\d+|\\d+))?)?) ((#-?)?\\d+)( (.*))?$",
 				"captures": {
 					"1": {
 						"patterns": [{"include": "#lookups"}, {"include": "#constants"}, {"include": "#decimals"}, {"include": "#variables"}]
